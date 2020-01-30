@@ -16,3 +16,25 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+nav {
+    border: 1px, solid #000000;
+    background: #444444;
+    text-align: center;
+}
+footer div {
+    display: inline-block;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background: #7a7a7a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
