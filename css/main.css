@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header div{
+    display: inline-block;
+    top: 50%;
+}
+
+header {
+    background: #80cbc4;
+    text-align: center;
+}
