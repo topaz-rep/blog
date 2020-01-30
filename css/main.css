@@ -4,11 +4,15 @@
 }
 
 header div{
+    border: 0.5px dotted crimson;
     display: inline-block;
     top: 50%;
+    text-align: center;
 }
 
 header {
     background: #80cbc4;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
