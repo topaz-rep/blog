@@ -32,7 +32,7 @@ header div .blog-name {
 }
 
 header div img {
-    width: 70%;
+    width: 60%;
 }
 
 main {
@@ -42,21 +42,33 @@ main {
 nav input {
     border-radius: 10px;
     font-size: 10px;
-    width: 250px;
     height: 25px;
     color: #c0c0c0;
-    margin: 10px;
 }
 
 nav .menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    align-items: center;
-    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 16px;
     background: #444444;
-    text-align: center;
+    padding: 0;
+}
+
+nav .menu li{
+    list-style-type: none;
+    border: 1px solid #000000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu #choosen {
+    background: #e6e6e6;
+}
+
+nav .menu a {
+    text-decoration: none;
     color: #ffffff;
 }
 
