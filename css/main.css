@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Roboto&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
 body {
     margin: 0;
 	padding: 0;
-}
-
-header div {
-    display: inline-block;
-    top: 50%;
-    text-align: center;
-}
-
-header div img {
-    width: 50%;
 }
 
 header {
@@ -20,11 +17,46 @@ header {
     align-items: center;
 }
 
-nav {
+header div p {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header div .blog-name {
+    font-family: 'Alex Brush', cursive;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+header div img {
+    width: 70%;
+}
+
+main {
+    margin: 20px;
+}
+
+nav input {
+    border-radius: 10px;
+    font-size: 10px;
+    width: 250px;
+    height: 25px;
+    color: #c0c0c0;
+    margin: 10px;
+}
+
+nav .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
     border: 1px solid #000000;
     background: #444444;
     text-align: center;
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -43,4 +75,8 @@ footer {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+img {
+    width: 100%;;
 }
