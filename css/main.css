@@ -36,6 +36,7 @@ header div img {
 }
 
 main {
+    display: grid;
     margin: 20px;
 }
 
@@ -90,5 +91,6 @@ footer {
 }
 
 img {
-    width: 100%;;
+    width: 100%;
+    margin: auto;
 }
