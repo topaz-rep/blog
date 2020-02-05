@@ -133,5 +133,22 @@ footer {
     header div img {
         display: block;
     }
-    
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+    article h1 { 
+        grid-area: 1 / 1 / 2 / 3; 
+        grid-auto-rows: max-content;
+    }
+    article img { grid-area: 2 / 1 / 4 / 2; }
+    article p .content { 
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    article p .tags { grid-area: 3 / 2 / 4 / 3; }
 }
