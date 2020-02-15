@@ -43,7 +43,8 @@ header div .blog-name {
 }
 
 header div img {
-    max-width: 320px;
+    width: 80px;
+    padding-right: 10px;
 }
 
 main {
@@ -143,6 +144,8 @@ form input, form textarea {
 
     header div {
         margin: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     header div img {
