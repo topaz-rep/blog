@@ -90,13 +90,20 @@ footer div {
 footer a {
     text-decoration: none;
     color: #ffffff;
+    padding-left: 5px;
 }
 
 footer {
     background: #7a7a7a;
-    display: flex;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    justify-items: left;
     align-items: center;
+    padding: 5px;
+}
+
+.fb-logo {
+    display: grid;
 }
 
 @media (min-width:575px) {
