@@ -192,7 +192,7 @@ form input, form textarea {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   top: 50px;
   left: 0;
   right: 0;
@@ -203,6 +203,7 @@ form input, form textarea {
   overflow: hidden;
   background-color: #263238;
   margin: 10px;
+  width: 200px;
 }
 .mobile-menu__list {
   transition: .5s;
@@ -226,7 +227,7 @@ form input, form textarea {
 }
 .mobile-menu__checkbox:checked ~ .mobile-menu__container {
   width: 200px;
-  height: 200px;
+  height: 220px;
 }
 .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
   background: transparent;
