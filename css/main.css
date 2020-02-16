@@ -136,33 +136,32 @@ form input, form textarea {
     height: 25px;
 }
 
-
-
 .mobile-menu {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 16px;
-  top: 0;
-  background-color: #263238;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 9999999;
-  margin: 10px;
-  width: 40px;
-  margin-top: 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    top: 0;
+    background-color: #263238;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 9999999;
+    margin: 10px;
+    width: 40px;
+    margin-top: 20px;
 }
+
 .mobile-menu__btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 30px;
-  cursor: pointer;
-  transition: .4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: .4s;
 }
 .mobile-menu__icon {
   display: block;
@@ -209,11 +208,19 @@ form input, form textarea {
   transition: .5s;
   list-style: none;
   padding-left: 0;
-  margin-top: -50px;
+  margin-top: 15px;
 }
 .mobile-menu__item {
   font-size: 26px;
+  padding: 5px 10px;
+}
+.mobile-menu__item-checked {
+  text-decoration: none;
+  font-size: 26px;
   padding-bottom: 15px;
+  color: #263238;
+  background-color: #c0c0c0;
+  padding: 5px 10px;
 }
 .mobile-menu__link {
   text-decoration: none;
@@ -226,8 +233,8 @@ form input, form textarea {
   opacity: 1;
 }
 .mobile-menu__checkbox:checked ~ .mobile-menu__container {
-  width: 200px;
-  height: 220px;
+  width: 190px;
+  height: 140px;
 }
 .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
   background: transparent;
