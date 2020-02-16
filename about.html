@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kate's blog - about</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Обзоры книг</a></li>
                     <li class="mobile-menu__item-checked">Обо мне</li>
-                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Поиск</a></li>
+                    <li class="mobile-menu__item"><p class="mobile-menu__link" onclick="showSearch()">Поиск</p></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +39,9 @@
             <ul class="menu">
                 <li><a href="index.html">Обзоры книг</a></li>
                 <li id="choosen">Обо мне</li>
-                <li><input type="search" name="search" value="Поиск..."></li>
+                <li>
+                    <p id="srch-btn" onclick="showSearch()">Поиск</p>
+                </li>
             </ul>
         </nav>
         <hr>
@@ -52,21 +55,32 @@
         <br>
         <form id="send-form">
             <p>Форма обратной связи</p>
-            <input type="text" name="name" value="Имя">
-            <input type="email" name="email" value="Почта">
-            <textarea name="message">Сообщение</textarea>
+            <input type="text" name="name" placeholder="Имя*" required>
+            <input type="email" name="email" placeholder="Почта*" required>
+            <textarea name="message" placeholder="Сообщение"></textarea>
             <input type="submit" id="send-btn" value="Отправить">
         </form>
     </main>
 
     <footer>
-        <div>
-            <img src="img/fb-logo.png" alt="лого Фейсбука">
+        <div class="fb-logo">
+            <a href="https://www.facebook.com/groups/766390460172785/" target="_black"><img src="img/fb-logo.png"
+                    alt="лого Фейсбука" /></a>
         </div>
-        <div>
-            <a href="https://www.facebook.com/groups/766390460172785/">Моя группа в Facebook</a>
+        <div class="fb-link">
+            <a href="https://www.facebook.com/groups/766390460172785/" target="_black">Моя группа в Facebook</a>
         </div>
     </footer>
+    <div class="search-form" id="search-form-id">
+        <i class="search-close" onclick="hideSearch()">×</i>
+        <div class="search-form__modal">
+            <form method="get" class="searcher-form">
+                <input type="search" class="searcher-form__field" placeholder="Поиск…">
+                <button type="submit" class="searcher-form__submit"><i class="search-icon__white"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -148,7 +148,7 @@ form textarea {
   left: 0;
   right: 0;
   height: 60px;
-  z-index: 9999999;
+  z-index: 9999;
   margin: 10px;
   width: 40px;
   margin-top: 20px;
@@ -222,6 +222,7 @@ form textarea {
 .mobile-menu__item {
   font-size: 26px;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .mobile-menu__item-checked {
@@ -270,8 +271,103 @@ form textarea {
   -webkit-transform: rotate(45deg);
 }
 
-@media (min-width: 575px) {
+#srch-btn {
+  color: #ffffff;
+  cursor: pointer;
+}
 
+.search-icon__white {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  display: inline-block;
+  background-image: url(../img/white-searcher.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+.search-form {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background-color: #fff;
+}
+.search-close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #000;
+  cursor: pointer;
+  font-size: 80px;
+  font-style: normal;
+}
+.search-form__modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 400px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.searcher-form {
+  padding: 0 5px;
+}
+.searcher-form__field {
+  color: #fff;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 26px;
+  background-color: #263238;
+}
+.searcher-form__field:focus {
+  outline: none;
+  border: none;
+}
+.searcher-form__field::-webkit-input-placeholder {
+  color: #fff;
+}
+.searcher-form__field::-moz-placeholder {
+  color: #fff;
+}
+.searcher-form__submit {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 55px;
+  height: 58px;
+}
+.searcher-form__submit:focus {
+  outline: none;
+  border: none;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+@media (min-width: 575px) {
   .mobile-menu {
     display: none;
   }

@@ -24,7 +24,7 @@
                         <a href="about.html" class="mobile-menu__link">Обо мне</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Поиск</a>
+                        <p class="mobile-menu__link" onclick="showSearch()">Поиск</p>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,9 @@
             <ul class="menu">
                 <li id="choosen">Обзоры книг</li>
                 <li><a href="about.html">Обо мне</a></li>
-                <li><input type="search" name="search" value="Поиск..." /></li>
+                <li>
+                    <p id="srch-btn" onclick="showSearch()">Поиск</p>
+                </li>
             </ul>
         </nav>
         <hr />
@@ -126,13 +128,23 @@
 
     <footer>
         <div class="fb-logo">
-            <a href="https://www.facebook.com/groups/766390460172785/"><img src="img/fb-logo.png"
+            <a href="https://www.facebook.com/groups/766390460172785/" target="_black"><img src="img/fb-logo.png"
                     alt="лого Фейсбука" /></a>
         </div>
         <div class="fb-link">
-            <a href="https://www.facebook.com/groups/766390460172785/">Моя группа в Facebook</a>
+            <a href="https://www.facebook.com/groups/766390460172785/" target="_black">Моя группа в Facebook</a>
         </div>
     </footer>
+    <div class="search-form" id="search-form-id">
+        <i class="search-close" onclick="hideSearch()">×</i>
+        <div class="search-form__modal">
+            <form method="get" class="searcher-form">
+                <input type="search" class="searcher-form__field" placeholder="Поиск…">
+                <button type="submit" class="searcher-form__submit"><i class="search-icon__white"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
