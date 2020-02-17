@@ -324,6 +324,7 @@ form textarea {
   padding: 15px 20px;
   border-radius: 26px;
   background-color: #263238;
+  font-family: "Roboto", sans-serif;
 }
 .searcher-form__field:focus {
   outline: none;
