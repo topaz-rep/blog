@@ -413,6 +413,11 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #ffffff;
   }
 
+  .desktop-menu {
+    position: sticky;
+    top: 0px;
+  }
+
   .content-block {
     display: grid;
     grid-template-columns: 2fr 3fr;
