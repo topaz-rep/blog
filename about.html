@@ -40,21 +40,16 @@
             </ul>
         </nav>
 
-        <!-- <div class="head-logo">
-            <img src="img/books.jpg" alt="Картинка - книги на столе">
-            <h1><span lang="en">Kate's blog:<br />блог об интересных книгах</span></h1>
-        </div> -->
-
         <hr id="double-hr">
         <img src="img/kate.jpg" alt="Фото Кати">
-        <p>Привет! :)</p>
+        <p class="content">Привет! :)</p>
         <p class="content">Меня зовут Катя, и это мой блог с отзывами на книги, которые мы прочитали вместе с моим сыном
             Женей. Я надеюсь, что информация полученная здесь будет вам полезной.</p>
         <p class="content">Если бы вы хотели увидеть обзор на какую либо книгу или подборку на интересующую вас тему,
             напишите мне в социальных сетях или используйте форму ниже.</p>
         <p class="content">Удачного просмотра! ;)</p>
         <br>
-        <form id="send-form">
+        <form id="send-form" action="https://formspree.io/xeqkqnow" method="POST">
             <p>Форма обратной связи</p>
             <input type="text" name="name" placeholder="Имя*" required>
             <input type="email" name="email" placeholder="Почта*" required>
@@ -64,10 +59,19 @@
     </main>
 
     <footer>
-        <p>Контакты:</p>
-        <div class="fb-logo">
-            <a href="https://www.facebook.com/groups/766390460172785/" target="_blank"><img src="img/fb-logo.png"
-                    alt="лого Фейсбука" /></a>
+        <div>
+            <div class="fb-logo">
+                <p>Посмотреть в Facebook:</p>
+                <a href="https://www.facebook.com/groups/766390460172785/" target="_blank"><img src="img/fb-logo.png"
+                        alt="лого Фейсбука" /></a>
+            </div>
+            <div class="subscr">
+                <form class="subs" action="https://formspree.io/mbjyjqek" method="POST">
+                    <p>Подписаться на новости</p>
+                    <input type="email" name="email" id="email" placeholder="Почта*" required>
+                    <input type="submit" value="Подписаться">
+                </form>
+            </div>
         </div>
     </footer>
     <div class="search-form" id="search-form-id">
