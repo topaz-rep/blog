@@ -75,7 +75,7 @@ function getResult(searchStr) {
                 if (documents[j].id === resArr[i]) {
                     outputField.innerHTML += `
                         <article>
-                            <h2 id="bookTitle">${documents[j].title}</h2>
+                            <h2>${documents[j].title}</h2>
                             <p class="tags" id="bookTags">${documents[j].tags}</p>
                             <div class="content-block">
                                 <div>
