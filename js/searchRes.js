@@ -76,13 +76,13 @@ function getResult(searchStr) {
                     outputField.innerHTML += `
                         <article>
                             <h2>${documents[j].title}</h2>
-                            <p class="tags" id="bookTags">${documents[j].tags}</p>
+                            <p class="tags">${documents[j].tags}</p>
                             <div class="content-block">
                                 <div>
                                     <img src="${documents[j].imgsrc}" alt="Картинка - Книга: Спи крепко..." />
                                 </div>
                                 <div>
-                                    <p class="content" id="bookContent">${documents[j].content}</p>
+                                    <p class="content">${documents[j].content}</p>
                                 </div>
                             </div>
                         </article>
