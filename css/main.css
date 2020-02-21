@@ -1,54 +1,39 @@
-@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
 
 :root {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 16px;
   max-width: 780px;
   margin: auto;
 }
 
 body {
   padding: 0;
-}
-
-header {
-  background: #263238;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-header div img {
-  display: none;
-}
-
-header div p {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-header div .blog-name {
-  font-family: "Alex Brush", cursive;
-  font-size: 40px;
-  padding: 0;
-  margin: 0;
-}
-
-header div img {
-  width: 80px;
-  padding-right: 10px;
+  background: #f0f0f0;
 }
 
 main {
-  margin: 20px;
+  margin: 0px;
+}
+
+.head-logo {
+	position	: relative;
+  width		: 100%;
+}
+
+.head-logo img {
+  margin-top: 50px;
+}
+
+h1 span {
+  position : absolute;
+	top : 20px;
+  left : 0;
+  text-align: left;
+  font-size: 20px;
+	color : white;
+	background : rgba(0, 0, 0, 0.7);
+	padding : 10px;
 }
 
 nav input {
@@ -57,6 +42,17 @@ nav input {
   color: #c0c0c0;
 }
 
+article,
+.book-block {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid gainsboro;
+  padding: 0 10px 10px;
+}
+
+article h2 {
+  text-align: center;
+}
 .menu {
   display: none;
 }
@@ -69,7 +65,30 @@ img {
 .content {
   text-align: justify;
   text-indent: 1em;
-  padding-left: 10px;
+  padding-left: 20px;
+  line-height: 1.5em;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 15px;
+}
+
+#srch-fld {
+  margin-right: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+#srch-btn {
+  margin-left: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
 }
 
 .tags {
@@ -78,13 +97,7 @@ img {
 }
 
 h1 {
-  color: #1464f6;
-  font-weight: bold;
-  text-align: center;
-}
-
-footer div {
-  display: inline-block;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -95,12 +108,30 @@ footer a {
 }
 
 footer {
-  background: #7a7a7a;
-  display: grid;
-  grid-template-columns: 1fr 12fr;
-  justify-items: left;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid gainsboro;
+  background: white;
+  margin: 10px;
+}
+
+footer img {
+  display: block;
+  margin: auto;
+  width: 50px;
+}
+
+footer div {
+  display: flex;
+}
+
+footer div p {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .fb-logo {
@@ -137,21 +168,26 @@ form textarea {
   height: 25px;
 }
 
+#double-hr {
+  border-bottom: 1px double;
+  height: 1px;
+}
+
 .mobile-menu {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  top: 0;
-  background-color: #263238;
+  top: -10px;
+  /* background-color: #263238; */
+  background: rgba(0, 0, 0, 0.7);
   left: 0;
   right: 0;
-  height: 60px;
+  height: 45px;
   z-index: 9999;
-  margin: 10px;
-  width: 40px;
-  margin-top: 20px;
+  margin: 8px;
+  width: auto;
 }
 
 .mobile-menu__btn {
@@ -199,7 +235,7 @@ form textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 70px;
+  top: 35px;
   left: 0;
   right: 0;
   z-index: 999;
@@ -207,9 +243,10 @@ form textarea {
   opacity: 1;
   transition: 0.5s;
   overflow: hidden;
-  background-color: #263238;
-  margin: 10px;
-  width: 200px;
+  /* background-color: #263238; */
+  background: rgba(0, 0, 0, 0.7);
+  margin: 8px;
+  /* width: 200px; */
 }
 
 .mobile-menu__list {
@@ -232,6 +269,7 @@ form textarea {
   color: #263238;
   background-color: #c0c0c0;
   padding: 5px 10px;
+  cursor: default;
 }
 
 .mobile-menu__link {
@@ -248,8 +286,8 @@ form textarea {
 }
 
 .mobile-menu__checkbox:checked ~ .mobile-menu__container {
-  width: 190px;
-  height: 140px;
+  width: auto;
+  height: auto;
 }
 
 .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
@@ -271,8 +309,8 @@ form textarea {
   -webkit-transform: rotate(45deg);
 }
 
-#srch-btn {
-  color: #ffffff;
+#srch-button {
+  color: #666666;
   cursor: pointer;
 }
 
@@ -324,7 +362,8 @@ form textarea {
   padding: 15px 20px;
   border-radius: 26px;
   background-color: #263238;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
 }
 .searcher-form__field:focus {
   outline: none;
@@ -369,6 +408,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media (min-width: 575px) {
+  main {
+    margin: 10px;
+  }
   .mobile-menu {
     display: none;
   }
@@ -386,19 +428,23 @@ input[type="search"]::-webkit-search-results-decoration {
 
   header div img {
     display: block;
+    width: 100%;
+  }
+  
+  .head-logo img {
+    margin-top: 0px;
   }
 
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 16px;
-    background: #444444;
+    font-size: 24px;
     padding: 0;
   }
 
   nav .menu li {
     list-style-type: none;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     height: 40px;
     display: flex;
     align-items: center;
@@ -406,22 +452,19 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   nav .menu #choosen {
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
 
   nav .menu a {
     text-decoration: none;
-    color: #ffffff;
-  }
-
-  .desktop-menu {
-    position: sticky;
-    top: 0px;
+    color: #666666;
   }
 
   .content-block {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   form {

@@ -29,13 +29,7 @@
                 </ul>
             </div>
         </nav>
-        <div>
-            <img src="img/books.png" alt="Стопка книг" />
-        </div>
-        <div>
-            <p lang="en" class="blog-name">Kate's blog</p>
-            <p>блог об интересных книгах</p>
-        </div>
+        
     </header>
 
     <main>
@@ -44,21 +38,27 @@
                 <li id="choosen">Обзоры книг</li>
                 <li><a href="about.html">Обо мне</a></li>
                 <li>
-                    <p id="srch-btn" onclick="showSearch()">Поиск</p>
+                    <p id="srch-button" onclick="showSearch()">Поиск</p>
                 </li>
             </ul>
         </nav>
-        <hr />
+        
+        <div class="head-logo">
+            <img src="img/books.jpg" alt="Картинка - книги на столе">
+            <h1><span>Kate's blog:<br />блог об интересных книгах</span></h1>
+        </div>        
+        <hr id="double-hr">
         <article>
-            <h1>
+            <h2 id="bookTitle">
                 "Спи міцно, моє будівництво" - Шеррі Даскі Рінкер та Том Ліхтенгелд
-            </h1>
+            </h2>
+            <p class="tags" id="bookTags">Стихи, 1-3 лет, Книга перед сном</p>
             <div class="content-block">
                 <div>
                     <img src="img/book-sleep-tight.jpg" alt="Картинка - Книга: Спи крепко..." />
                 </div>
                 <div>
-                    <p class="content">
+                    <p class="content" id="bookContent">
                         Вечером все машинки на строительной площадке заканчивают свои
                         важные дела и готовятся ко сну. А с ними и Ваш малыш :-) Я долго
                         думала покупать эту книгу или нет. Не смотря на её огромную
@@ -70,22 +70,22 @@
                         пор помню её наизусть :-) Страсти улеглись где-то после двух. Но
                         мы нашли новый "засыпательный" хит
                     </p>
-                    <p class="tags">Стихи, 1-3 лет, Книга перед сном</p>
                 </div>
             </div>
         </article>
-        <hr />
+
         <article>
-            <h1>
+            <h2 id="bookTitle">
                 "Всё о компьютерах и ... ноутбуках, планшетах, смартфонах" - изд.
                 Робинс
-            </h1>
+            </h2>
+            <p class="tags" id="bookTags">Познавательное, 6-12 лет, Книги с окошками</p>
             <div class="content-block">
                 <div>
                     <img src="img/book-about-pc.jpg" alt="Картинка - Книга о ПК" />
                 </div>
                 <div>
-                    <p class="content">
+                    <p class="content" id="bookContent">
                         Недавно к нам приехала новая книга от Usborne (в переводе
                         издательства Робинс). Всё о компьютерах и ноутбуках, планшетах,
                         смартфонах. Я бы рекомендовала её младшим школьникам - 6-10 лет.
@@ -93,20 +93,20 @@
                         понятно. Книга красочная и очень интересная. Объясняет коротко
                         основные понятия о компьютерах, программировании, интернете.
                     </p>
-                    <p class="tags">Познавательное, 6-12 лет, Книги с окошками</p>
                 </div>
             </div>
         </article>
-        <hr />
+
         <article>
-            <h1>"Занимательная таблица умножения" - изд. Робинс</h1>
+            <h2 id="bookTitle">"Занимательная таблица умножения" - изд. Робинс</h2>
+            <p class="tags" id="bookTags">Школьнику, 6-10 лет, Книги с окошками</p>
             <div class="content-block">
                 <div>
                     <img src="img/book-multiplication-table.jpg"
                         alt="Картинка - Книга - Занимательная таблица умножения" />
                 </div>
                 <div>
-                    <p class="content">
+                    <p class="content" id="bookContent">
                         Учим таблицу умножения весело с очередным шедевром от Usborne (в
                         переводе издательства Робинс). Я в своё время могла только мечтать
                         о такой книге, когда учила унылую таблицу на обороте школьной
@@ -119,32 +119,42 @@
                         понимаю почему он её "читает" :-) Книга отличного качества,
                         плотный картон, "не бумажные", а плотные окошки.
                     </p>
-                    <p class="tags">Школьнику, 6-10 лет, Книги с окошками</p>
                 </div>
             </div>
         </article>
-        <hr />
+
     </main>
 
     <footer>
-        <div class="fb-logo">
-            <a href="https://www.facebook.com/groups/766390460172785/" target="_blank"><img src="img/fb-logo.png"
-                    alt="лого Фейсбука" /></a>
-        </div>
-        <div class="fb-link">
-            <a href="https://www.facebook.com/groups/766390460172785/" target="_blank">Моя группа в Facebook</a>
+        <div>
+            <div class="fb-logo">
+                <p>Посмотреть в Facebook:</p>
+                <a href="https://www.facebook.com/groups/766390460172785/" target="_blank"><img src="img/fb-logo.png"
+                        alt="лого Фейсбука" /></a>
+            </div>
+            <div class="subscr">
+                <form action="https://formspree.io/mbjyjqek" method="POST">
+                    <p>Подписаться на новости</p>
+                        <input type="email" name="email" id="email" placeholder="Почта*" required>
+                        <input type="button" value="Подписаться">
+                </form>
+            </div>
         </div>
     </footer>
     <div class="search-form" id="search-form-id">
         <i class="search-close" onclick="hideSearch()">×</i>
-        <div class="search-form__modal">
-            <form method="get" class="searcher-form">
-                <input type="search" class="searcher-form__field" placeholder="Поиск…">
-                <button type="submit" class="searcher-form__submit"><i class="search-icon__white"></i></button>
+        <span class="search-form__modal">
+            <form class="searcher-form" action="search.html">
+                <input type="search" id="searcher-field" class="searcher-form__field" placeholder="Поиск…">
+                <button type="submit" id="searcher-submit" class="searcher-form__submit"><i
+                        class="search-icon__white"></i></button>
             </form>
-        </div>
+            <span id="searcher-results"></span>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/lunr.js"></script>
+    <script src="js/lunr.stemmer.support.js"></script>
+    <script src="js/lunr.multi.js"></script>
+    <script src="js/lunr.ru.js"></script>
+    <script src="js/searchPopup.js"></script>
 </body>
-
 </html>

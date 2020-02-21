@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kate's blog</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <nav class="mobile-menu">
+            <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+            <label for="checkbox" class="mobile-menu__btn">
+                <span class="mobile-menu__icon"></span>
+            </label>
+            <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="index.html" class="mobile-menu__link">Обзоры книг</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="about.html" class="mobile-menu__link">Обо мне</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <p class="mobile-menu__item-checked">Поиск</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <nav class="desktop-menu">
+            <ul class="menu">
+                <li><a href="index.html">Обзоры книг</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li>
+                    <p id="choosen">Поиск</p>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="head-logo">
+            <img src="img/books.jpg" alt="Картинка - книги на столе">
+            <h1><span lang="en">Kate's blog:<br />блог об интересных книгах</span></h1>
+        </div>
+
+        <hr id="double-hr">
+        <div class="search-section">
+            <input type="search" id="srch-fld" placeholder="Поиск…">
+            <button type="submit" id="srch-btn">Найти</button>
+        </div>
+        <div id="searcher-results"></div>
+
+    </main>
+
+    <footer>
+        <p>Контакты:</p>
+        <div class="fb-logo">
+            <a href="https://www.facebook.com/groups/766390460172785/" target="_blank"><img src="img/fb-logo.png"
+                    alt="лого Фейсбука" /></a>
+        </div>
+    </footer>
+
+    <script src="js/lunr.js"></script>
+    <script src="js/lunr.stemmer.support.js"></script>
+    <script src="js/lunr.multi.js"></script>
+    <script src="js/lunr.ru.js"></script>
+    <script src="js/searchRes.js"></script>
+</body>
+
+</html>
